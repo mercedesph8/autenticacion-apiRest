@@ -1,8 +1,15 @@
 import express from "express";
 const router = express.Router();
 
-router.post("/", (req, res) => {
-  res.json({ message: "Login endpoint - pendiente de implementar" });
-});
+//Array de usuarios que simula la base de datos
+const usuarios = [
+  {nombreUsuario: "admin", contrasenia: "admin"},
+  {nombreUsuario: "mercedes", contrasenia: "0000"},
+  {nombreUsuario: "jesus", contrasenia: "1234"},
+]
 
-export default router;
+//Funcion para generar el tokem de autenticacion 
+function generarToken(nombreUsuario){
+  return Buffer.from(nombreUsuario).toString('base64'); //Para convertir el nombre de usuario a base64
+
+}
