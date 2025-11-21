@@ -1,7 +1,7 @@
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, rgb(47, 233, 198) 0%, rgb(24.3434782609, 230.1565217391, 191.4282608696) 100%);
-  color: rgb(241, 245, 249);
+  background: linear-gradient(135deg, #18181B 0%, rgb(12, 12, 13.5) 100%);
+  color: #FAFAFA;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -9,16 +9,16 @@ body {
 }
 
 .contenedor-login {
-  background: rgb(255, 255, 255);
+  background: #27272A;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 400px;
-  border: 1px solid rgb(39, 194, 165);
+  border: 1px solid #3F3F46;
 }
 .contenedor-login h2 {
-  color: rgb(31, 156, 133);
+  color: #059669;
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -31,7 +31,7 @@ form {
   gap: 1.5rem;
 }
 form label {
-  color: rgb(0, 0, 0);
+  color: #A1A1AA;
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -40,28 +40,28 @@ form label {
 form input {
   width: 100%;
   padding: 0.875rem 1rem;
-  background: rgb(47, 233, 198);
-  border: 2px solid rgb(39, 194, 165);
+  background: #18181B;
+  border: 2px solid #3F3F46;
   border-radius: 0.5rem;
-  color: rgb(241, 245, 249);
+  color: #FAFAFA;
   font-size: 1rem;
   transition: all 0.3Fs ease;
 }
 form input:focus {
   outline: none;
-  border-color: rgb(31, 156, 133);
-  box-shadow: 0 0 20px rgba(31, 156, 133, 0.4);
+  border-color: #059669;
+  box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
 }
 form input::-moz-placeholder {
-  color: rgb(100, 116, 139);
+  color: #71717A;
 }
 form input::placeholder {
-  color: rgb(100, 116, 139);
+  color: #71717A;
 }
 form button {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, rgb(31, 156, 133) 0%, rgb(22.5454545455, 113.4545454545, 96.7272727273) 100%);
+  background: linear-gradient(135deg, #059669 0%, rgb(3.3548387097, 100.6451612903, 70.4516129032) 100%);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -73,7 +73,7 @@ form button {
 }
 form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(31, 156, 133, 0.4);
+  box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
 }
 form button:active {
   transform: translateY(0);
@@ -81,8 +81,8 @@ form button:active {
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, rgb(47, 233, 198) 0%, rgb(24.3434782609, 230.1565217391, 191.4282608696) 100%);
-  color: rgb(241, 245, 249);
+  background: linear-gradient(135deg, #18181B 0%, rgb(12, 12, 13.5) 100%);
+  color: #FAFAFA;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -90,17 +90,17 @@ body {
 }
 
 .contenedor-bienvenida {
-  background: rgb(255, 255, 255);
+  background: #27272A;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 500px;
   text-align: center;
-  border: 1px solid rgb(39, 194, 165);
+  border: 1px solid #3F3F46;
 }
 .contenedor-bienvenida h2 {
-  color: rgb(45, 212, 191);
+  color: #D97706;
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -108,26 +108,26 @@ body {
 .contenedor-bienvenida .nombre-usuario {
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, rgb(31, 156, 133), rgb(255, 107, 157));
+  background: linear-gradient(135deg, #059669, #8B5CF6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 1.5rem 0;
 }
 .contenedor-bienvenida .fecha-hora {
-  color: rgb(0, 0, 0);
+  color: #A1A1AA;
   font-size: 1.125rem;
   margin-bottom: 2rem;
 }
 .contenedor-bienvenida .separador {
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, rgb(39, 194, 165) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #3F3F46 50%, transparent 100%);
   margin: 2rem 0;
 }
 .contenedor-bienvenida .boton-cerrar-sesion {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, rgb(196, 0, 0) 0%, #910000 100%);
+  background: linear-gradient(135deg, #DC2626 0%, rgb(178.25, 28.75, 28.75) 100%);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -138,20 +138,20 @@ body {
 }
 .contenedor-bienvenida .boton-cerrar-sesion:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(196, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
 }
 .contenedor-bienvenida .boton-cerrar-sesion:active {
   transform: translateY(0);
 }
 .contenedor-bienvenida .cargando {
-  color: rgb(100, 116, 139);
+  color: #71717A;
   font-style: italic;
 }
 
 body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #5e0000 0%, #2b0000 100%);
-  color: rgb(241, 245, 249);
+  background: linear-gradient(135deg, rgb(134.3333333333, 21.6666666667, 21.6666666667) 0%, rgb(90.4166666667, 14.5833333333, 14.5833333333) 100%);
+  color: #FAFAFA;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -159,28 +159,28 @@ body {
 }
 
 .contenedor-prohibido {
-  background: rgb(255, 255, 255);
+  background: #27272A;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   width: 90%;
   max-width: 450px;
   text-align: center;
-  border: 2px solid rgb(196, 0, 0);
+  border: 2px solid #DC2626;
 }
 .contenedor-prohibido h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 10px rgba(196, 0, 0, 0.5));
+  filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.5));
 }
 .contenedor-prohibido h2 {
-  color: rgb(196, 0, 0);
+  color: #DC2626;
   font-size: 1.875rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 .contenedor-prohibido p {
-  color: rgb(0, 0, 0);
+  color: #A1A1AA;
   line-height: 1.6;
   margin: 1rem 0;
   font-size: 1rem;
@@ -188,7 +188,7 @@ body {
 .contenedor-prohibido .boton-login {
   display: inline-block;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, rgb(31, 156, 133) 0%, rgb(22.5454545455, 113.4545454545, 96.7272727273) 100%);
+  background: linear-gradient(135deg, #059669 0%, rgb(3.3548387097, 100.6451612903, 70.4516129032) 100%);
   color: white;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -198,14 +198,14 @@ body {
 }
 .contenedor-prohibido .boton-login:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(31, 156, 133, 0.4);
+  box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
 }
 .contenedor-prohibido .boton-login:active {
   transform: translateY(0);
 }
 .contenedor-prohibido .mensaje-adicional {
   font-size: 0.875rem;
-  color: rgb(100, 116, 139);
+  color: #71717A;
   margin-top: 2rem;
 }
 
