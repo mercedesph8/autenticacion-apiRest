@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 //Funcion para obtener datos del usuario desde el servidor
 async function obtenerDatosUsuario(token) {
-  const response = await fetch("/front/bienvenida", {
+  const response = await fetch("/api/bienvenida", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`, //Enviamos el token en la cabecera de autorización
@@ -37,11 +37,12 @@ async function obtenerDatosUsuario(token) {
     mostrarDatosUsuario(data);
   } else {
     //Si el token no es valido, redirigimos a permisos
-    alert(data.message);
     window.location.href = "prohibido.html";
   }
+}
 
-  function mostrarDatosUsuario(data) {
+
+ function mostrarDatosUsuario(data) {
     //Mostramos nombre de usuario
     const nombreUsuario = document.getElementById("nombreUsuario");
     nombreUsuario.textContent = data.nombreUsuario;
@@ -62,4 +63,3 @@ async function obtenerDatosUsuario(token) {
       window.location.href = "login.html";
     }
   }
-}
