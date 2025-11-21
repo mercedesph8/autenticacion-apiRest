@@ -1,11 +1,19 @@
 const express = require("express"); //Importamos el framework Express para crear el servidor web
 const crypto = require("crypto"); //Importamos el módulo crypto de Node.js para encriptar
 const cors = require("cors"); //Importamos el módulo cors para permitir peticiones desde el front
+const path = require("path");
 
 const app = express(); //Creamos la aplicación express
 app.use (express.json()); //Para que convierta los archivos json en JS y pueda manejarlos
 app.use(cors()); //Habilitamos CORS para todas las rutas
 
+const frontPath = path.join (__dirname, '../front'); //Definimos la ruta del front
+app.use(express.static(frontPath)); //Servimos los archivos estáticos del front
+
+// Ruta raíz que redirige al login
+app.get('/', (req, res) => {
+    res.redirect('/login.html');
+});
 
 //Clave secreta para firmar los tokens JWT
 const SECRET_KEY = "mi_clave_secreta";
@@ -38,7 +46,7 @@ return Buffer.from(data, 'base64').toString('utf8');
 function crearJWT(payload){
     //Creamos el header
     const header = {
-        alg: "HS356",
+        alg: "HS256",
         typ: 'JWT'
     };
     //Cofidificamos el header y el payload a base64
@@ -87,7 +95,7 @@ function verificarJWT(token){
 }
 
 //Creamos el Endpoint del login (la ruta que recibe el usuario y contraseña y devuelve el token)
-app.post('/login', (req,res) => {
+app.post('/api/login', (req,res) => {
     const { nombreUsuario,contrasenia } = req.body;//Recogemos los datos del cuerpo de la petición
     
     //Buscamos al usuario en el array. Find no devuelve el token, sino un objeto usuario o undefined si no lo encuentra
@@ -117,7 +125,7 @@ app.post('/login', (req,res) => {
 });
 
 //Endpoint de bienvenida (ruta que necesita el token para acceder)
-app.get('/bienvenida', (req,res) => {
+app.get('/api/bienvenida', (req,res) => {
   //Necesitamos obtener el token que viene en la cabecera (authorization)
     const autenticacionHeader = req.headers['authorization']; //Recogemos el token del header de autorización
 
