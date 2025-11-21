@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $fuente-principal;
+    background: linear-gradient(135deg, darken($color-error, 20%) 0%, darken($color-error, 30%) 100%);
+    color: $color-texto-primario;
+    min-height: 100vh;
+    @include centrar;
+}
+
+.contenedor-prohibido {
+    background: $color-superficie;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    border: 2px solid $color-error;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        filter: drop-shadow(0 0 10px rgba($color-error, 0.5));
+    }
+
+    h2 {
+        color: $color-error;
+        font-size: 1.875rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: $color-texto-secundario;
+        line-height: 1.6;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .boton-login {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background: linear-gradient(135deg, $color-primario 0%, darken($color-primario, 10%) 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        @include transicion;
+
+        &:hover {
+            transform: translateY(-2px);
+            @include glow($color-primario);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .mensaje-adicional {
+        font-size: 0.875rem;
+        color: $color-texto-deshabilitado;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,80 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $fuente-principal;
+    background: linear-gradient(135deg, $color-fondo 0%, darken($color-fondo, 5%) 100%);
+    color: $color-texto-primario;
+    min-height: 100vh;
+    @include centrar;
+}
+
+.contenedor-bienvenida {
+    background: $color-superficie;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid $color-superficie-clara;
+
+    h2 {
+        color: $color-secundario;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .nombre-usuario {
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, $color-primario, $color-terciario);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin: 1.5rem 0;
+    }
+
+    .fecha-hora {
+        color: $color-texto-secundario;
+        font-size: 1.125rem;
+        margin-bottom: 2rem;
+    }
+
+    .separador {
+        height: 2px;
+        background: linear-gradient(90deg,
+                transparent 0%,
+                $color-superficie-clara 50%,
+                transparent 100%);
+        margin: 2rem 0;
+    }
+
+    .boton-cerrar-sesion {
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(135deg, $color-error 0%, darken($color-error, 10%) 100%);
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        @include transicion;
+
+        &:hover {
+            transform: translateY(-2px);
+            @include glow($color-error);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    .cargando {
+        color: $color-texto-deshabilitado;
+        font-style: italic;
+    }
+}

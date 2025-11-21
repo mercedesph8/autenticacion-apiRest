@@ -42,24 +42,24 @@ async function obtenerDatosUsuario(token) {
 }
 
 
- function mostrarDatosUsuario(data) {
-    //Mostramos nombre de usuario
-    const nombreUsuario = document.getElementById("nombreUsuario");
-    nombreUsuario.textContent = data.nombreUsuario;
-    //Mostramos hora de acceso
-    const fechayHora = document.getElementById("fechaHora");
-    fechayHora.textContent = data.hora;
-  }
+function mostrarDatosUsuario(data) {
+  //Mostramos nombre de usuario
+  const nombreUsuario = document.getElementById("nombreUsuario");
+  nombreUsuario.textContent = data.nombreUsuario;
+  //Mostramos hora de acceso
+  const fechayHora = document.getElementById("fechaHora");
+  fechayHora.textContent = data.hora;
+}
 
-  //Función para cerrar sesión
-  function cerrarSesion() {
-    //Preguntamos si esta seguro de cerrar sesión
-    const confirmar = confirm("¿Estás seguro de que quieres cerrar la sesión?");
-    if (confirmar) {
-      //Si confirma, borramos el token del localStorage y redirigimos al login
-      localStorage.removeItem("token");
+//Función para cerrar sesión
+function cerrarSesion() {
+  //Preguntamos si esta seguro de cerrar sesión
+  const confirmar = confirm("¿Estás seguro de que quieres cerrar la sesión?");
+  if (confirmar) {
+    //Si confirma, borramos el token del localStorage y redirigimos al login
+    localStorage.removeItem("token");
 
-      //Redirigimos al login
-      window.location.href = "login.html";
-    }
+    //Redirigimos al login
+    window.location.href = "login.html";
   }
+}

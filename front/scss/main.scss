@@ -1,0 +1,12 @@
+@use 'variables';
+@use 'mixins';
+@use 'login';
+@use 'bienvenida';
+@use 'prohibido';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+// Centrar contenido
+@mixin centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Transición suave
+@mixin transicion {
+    transition: all 0.3Fs ease;
+}
+
+// Efecto glow en hover
+@mixin glow($color) {
+    box-shadow: 0 0 20px rgba($color, 0.4);
+}

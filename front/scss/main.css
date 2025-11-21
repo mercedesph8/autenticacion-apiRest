@@ -1,0 +1,216 @@
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, rgb(47, 233, 198) 0%, rgb(24.3434782609, 230.1565217391, 191.4282608696) 100%);
+  color: rgb(241, 245, 249);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-login {
+  background: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid rgb(39, 194, 165);
+}
+.contenedor-login h2 {
+  color: rgb(31, 156, 133);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+form label {
+  color: rgb(0, 0, 0);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+form input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: rgb(47, 233, 198);
+  border: 2px solid rgb(39, 194, 165);
+  border-radius: 0.5rem;
+  color: rgb(241, 245, 249);
+  font-size: 1rem;
+  transition: all 0.3Fs ease;
+}
+form input:focus {
+  outline: none;
+  border-color: rgb(31, 156, 133);
+  box-shadow: 0 0 20px rgba(31, 156, 133, 0.4);
+}
+form input::-moz-placeholder {
+  color: rgb(100, 116, 139);
+}
+form input::placeholder {
+  color: rgb(100, 116, 139);
+}
+form button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgb(31, 156, 133) 0%, rgb(22.5454545455, 113.4545454545, 96.7272727273) 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3Fs ease;
+}
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(31, 156, 133, 0.4);
+}
+form button:active {
+  transform: translateY(0);
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, rgb(47, 233, 198) 0%, rgb(24.3434782609, 230.1565217391, 191.4282608696) 100%);
+  color: rgb(241, 245, 249);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-bienvenida {
+  background: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid rgb(39, 194, 165);
+}
+.contenedor-bienvenida h2 {
+  color: rgb(45, 212, 191);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.contenedor-bienvenida .nombre-usuario {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgb(31, 156, 133), rgb(255, 107, 157));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 1.5rem 0;
+}
+.contenedor-bienvenida .fecha-hora {
+  color: rgb(0, 0, 0);
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+.contenedor-bienvenida .separador {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgb(39, 194, 165) 50%, transparent 100%);
+  margin: 2rem 0;
+}
+.contenedor-bienvenida .boton-cerrar-sesion {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgb(196, 0, 0) 0%, #910000 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3Fs ease;
+}
+.contenedor-bienvenida .boton-cerrar-sesion:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(196, 0, 0, 0.4);
+}
+.contenedor-bienvenida .boton-cerrar-sesion:active {
+  transform: translateY(0);
+}
+.contenedor-bienvenida .cargando {
+  color: rgb(100, 116, 139);
+  font-style: italic;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #5e0000 0%, #2b0000 100%);
+  color: rgb(241, 245, 249);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-prohibido {
+  background: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  border: 2px solid rgb(196, 0, 0);
+}
+.contenedor-prohibido h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px rgba(196, 0, 0, 0.5));
+}
+.contenedor-prohibido h2 {
+  color: rgb(196, 0, 0);
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.contenedor-prohibido p {
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.contenedor-prohibido .boton-login {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, rgb(31, 156, 133) 0%, rgb(22.5454545455, 113.4545454545, 96.7272727273) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  transition: all 0.3Fs ease;
+}
+.contenedor-prohibido .boton-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(31, 156, 133, 0.4);
+}
+.contenedor-prohibido .boton-login:active {
+  transform: translateY(0);
+}
+.contenedor-prohibido .mensaje-adicional {
+  font-size: 0.875rem;
+  color: rgb(100, 116, 139);
+  margin-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

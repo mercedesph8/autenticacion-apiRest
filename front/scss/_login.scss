@@ -1,0 +1,88 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+    font-family: $fuente-principal;
+    background: linear-gradient(135deg, $color-fondo 0%, darken($color-fondo, 5%) 100%);
+    color: $color-texto-primario;
+    min-height: 100vh;
+    @include centrar;
+}
+
+// Contenedor del formulario
+.contenedor-login {
+    background: $color-superficie;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid $color-superficie-clara;
+
+    h2 {
+        color: $color-primario;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+// Formulario
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    label {
+        color: $color-texto-secundario;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.875rem 1rem;
+        background: $color-fondo;
+        border: 2px solid $color-superficie-clara;
+        border-radius: 0.5rem;
+        color: $color-texto-primario;
+        font-size: 1rem;
+        @include transicion;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primario;
+            @include glow($color-primario);
+        }
+
+        &::placeholder {
+            color: $color-texto-deshabilitado;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        background: linear-gradient(135deg, $color-primario 0%, darken($color-primario, 10%) 100%);
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 1rem;
+        @include transicion;
+
+        &:hover {
+            transform: translateY(-2px);
+            @include glow($color-primario);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}
