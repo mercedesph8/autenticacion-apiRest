@@ -34,7 +34,7 @@ if(response.ok){
   //Guardamos el token en el localStorage del navegador
   localStorage.setItem('token',data.token);
   //Redirigimos a la página de bienvenida
-  window.Location.href = '/bienvenida.html';
+  window.location.href = '/bienvenida.html';
 } else {
   alert("Credenciales incorrectas");
 }
