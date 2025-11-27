@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 // Centrar contenido
 @mixin centrar {
     display: flex;
@@ -7,7 +9,7 @@
 
 // Transición suave
 @mixin transicion {
-    transition: all 0.3Fs ease;
+    transition: all 0.3s ease;
 }
 
 // Efecto glow en hover

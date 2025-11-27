@@ -1,12 +1,8 @@
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
 body {
-    font-family: $fuente-principal;
-    background: linear-gradient(135deg, darken($color-error, 20%) 0%, darken($color-error, 30%) 100%);
-    color: $color-texto-primario;
-    min-height: 100vh;
-    @include centrar;
+    background: $color-error;
 }
 
 .contenedor-prohibido {
@@ -42,7 +38,7 @@ body {
     .boton-login {
         display: inline-block;
         padding: 1rem 2rem;
-        background: linear-gradient(135deg, $color-primario 0%, darken($color-primario, 10%) 100%);
+        background: $color-primario;
         color: white;
         text-decoration: none;
         border-radius: 0.5rem;

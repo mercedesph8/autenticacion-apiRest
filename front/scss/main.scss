@@ -1,12 +1,19 @@
-@use 'variables';
-@use 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 @use 'login';
 @use 'bienvenida';
 @use 'prohibido';
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente-principal;
+    background: $color-fondo;
+    color: $color-texto-primario;
+    min-height: 100vh;
+    @include centrar;
 }

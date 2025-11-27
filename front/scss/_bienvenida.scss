@@ -1,13 +1,6 @@
-@import 'variables';
-@import 'mixins';
+@use 'variables' as *;
+@use 'mixins' as *;
 
-body {
-    font-family: $fuente-principal;
-    background: linear-gradient(135deg, $color-fondo 0%, darken($color-fondo, 5%) 100%);
-    color: $color-texto-primario;
-    min-height: 100vh;
-    @include centrar;
-}
 
 .contenedor-bienvenida {
     background: $color-superficie;
@@ -20,7 +13,7 @@ body {
     border: 1px solid $color-superficie-clara;
 
     h2 {
-        color: $color-secundario;
+        color: $color-primario;
         font-size: 2rem;
         margin-bottom: 1rem;
         font-weight: 700;
@@ -29,7 +22,7 @@ body {
     .nombre-usuario {
         font-size: 2rem;
         font-weight: 700;
-        background: linear-gradient(135deg, $color-primario, $color-terciario);
+        background: $color-terciario;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

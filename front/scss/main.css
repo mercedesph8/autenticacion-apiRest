@@ -1,28 +1,21 @@
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #18181B 0%, rgb(12, 12, 13.5) 100%);
-  color: #FAFAFA;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contenedor-login {
-  background: #27272A;
+  background: #FFFAF0;
   padding: 3rem;
-  border-radius: 1rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
   width: 90%;
-  max-width: 400px;
-  border: 1px solid #3F3F46;
+  max-width: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .contenedor-login h2 {
-  color: #059669;
-  font-size: 2rem;
+  color: #8B4513;
+  font-size: 2.25rem;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 form {
@@ -31,7 +24,7 @@ form {
   gap: 1.5rem;
 }
 form label {
-  color: #A1A1AA;
+  color: #6D4C41;
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -39,18 +32,19 @@ form label {
 }
 form input {
   width: 100%;
-  padding: 0.875rem 1rem;
-  background: #18181B;
-  border: 2px solid #3F3F46;
-  border-radius: 0.5rem;
-  color: #FAFAFA;
+  padding: 1rem 1.25rem;
+  background: rgba(139, 69, 19, 0.3);
+  border: 2px solid #8B4513;
+  border-radius: 0.75rem;
+  color: #3E2723;
   font-size: 1rem;
-  transition: all 0.3Fs ease;
+  transition: all 0.3s ease;
 }
 form input:focus {
   outline: none;
-  border-color: #059669;
-  box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
+  border-color: #8B4513;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.4);
 }
 form input::-moz-placeholder {
   color: #71717A;
@@ -60,47 +54,38 @@ form input::placeholder {
 }
 form button {
   width: 100%;
-  padding: 1rem;
-  background: linear-gradient(135deg, #059669 0%, rgb(3.3548387097, 100.6451612903, 70.4516129032) 100%);
+  padding: 1.125rem;
+  background: linear-gradient(135deg, #8B4513 0%, rgb(71.6993670886, 35.5917721519, 9.8006329114) 100%);
   color: white;
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.0625rem;
   font-weight: 600;
   cursor: pointer;
   margin-top: 1rem;
-  transition: all 0.3Fs ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
 }
 form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
 }
 form button:active {
   transform: translateY(0);
 }
 
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #18181B 0%, rgb(12, 12, 13.5) 100%);
-  color: #FAFAFA;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contenedor-bienvenida {
-  background: #27272A;
+  background: #FFFAF0;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 500px;
   text-align: center;
-  border: 1px solid #3F3F46;
+  border: 1px solid #FFFAF0;
 }
 .contenedor-bienvenida h2 {
-  color: #D97706;
+  color: #8B4513;
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -108,37 +93,37 @@ body {
 .contenedor-bienvenida .nombre-usuario {
   font-size: 2rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #059669, #8B5CF6);
+  background: #CD853F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 1.5rem 0;
 }
 .contenedor-bienvenida .fecha-hora {
-  color: #A1A1AA;
+  color: #6D4C41;
   font-size: 1.125rem;
   margin-bottom: 2rem;
 }
 .contenedor-bienvenida .separador {
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, #3F3F46 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, #FFFAF0 50%, transparent 100%);
   margin: 2rem 0;
 }
 .contenedor-bienvenida .boton-cerrar-sesion {
   width: 100%;
   padding: 1rem;
-  background: linear-gradient(135deg, #DC2626 0%, rgb(178.25, 28.75, 28.75) 100%);
+  background: linear-gradient(135deg, #d63031 0%, rgb(176.1169354839, 34.8830645161, 35.7338709677) 100%);
   color: white;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3Fs ease;
+  transition: all 0.3s ease;
 }
 .contenedor-bienvenida .boton-cerrar-sesion:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
+  box-shadow: 0 0 20px rgba(214, 48, 49, 0.4);
 }
 .contenedor-bienvenida .boton-cerrar-sesion:active {
   transform: translateY(0);
@@ -149,38 +134,32 @@ body {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, rgb(134.3333333333, 21.6666666667, 21.6666666667) 0%, rgb(90.4166666667, 14.5833333333, 14.5833333333) 100%);
-  color: #FAFAFA;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #d63031;
 }
 
 .contenedor-prohibido {
-  background: #27272A;
+  background: #FFFAF0;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   width: 90%;
   max-width: 450px;
   text-align: center;
-  border: 2px solid #DC2626;
+  border: 2px solid #d63031;
 }
 .contenedor-prohibido h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.5));
+  filter: drop-shadow(0 0 10px rgba(214, 48, 49, 0.5));
 }
 .contenedor-prohibido h2 {
-  color: #DC2626;
+  color: #d63031;
   font-size: 1.875rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
 .contenedor-prohibido p {
-  color: #A1A1AA;
+  color: #6D4C41;
   line-height: 1.6;
   margin: 1rem 0;
   font-size: 1rem;
@@ -188,17 +167,17 @@ body {
 .contenedor-prohibido .boton-login {
   display: inline-block;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #059669 0%, rgb(3.3548387097, 100.6451612903, 70.4516129032) 100%);
+  background: #8B4513;
   color: white;
   text-decoration: none;
   border-radius: 0.5rem;
   font-weight: 600;
   margin-top: 2rem;
-  transition: all 0.3Fs ease;
+  transition: all 0.3s ease;
 }
 .contenedor-prohibido .boton-login:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 0 20px rgba(139, 69, 19, 0.4);
 }
 .contenedor-prohibido .boton-login:active {
   transform: translateY(0);
@@ -213,4 +192,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #FFF8DC;
+  color: #3E2723;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
