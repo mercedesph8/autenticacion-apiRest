@@ -158,13 +158,6 @@ app.get('/api/bienvenida', (req, res) => {
         nombreUsuario: payload.nombreUsuario, //Del JWT decodificado
         hora: new Date().toLocaleString('es-ES')
     });
-    // Ejemplo de respuesta:
-    // {
-    //   "message": "Bienvenido",
-    //   "nombreUsuario": "admin",
-    //   "hora": "21/11/2024, 20:30:45"
-    // }
-
 });
 
 
